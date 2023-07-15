@@ -10,10 +10,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@media screen and (max-width: 767px) and (orientation: landscape) {
-
+@media screen and (max-width: 767px) {
+  /* Áp dụng kiểu CSS cho giao diện điện thoại di động */
   body {
-    width: 100%;
+    transform: rotate(90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
 }
-
