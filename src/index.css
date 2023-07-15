@@ -10,9 +10,3 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@media screen and (max-width: 767px) {
-  /* Áp dụng kiểu CSS cho giao diện điện thoại di động */
-  body {
-    transform: rotate(90deg);
-  }
-}

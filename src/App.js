@@ -12,11 +12,14 @@ import wwhitpaper from "./image/wwhitpaper.png";
 import gamebt from "./image/gamebt.png";
 import squaretime from "./image/squaretime.png";
 import connectbutton from "./image/connectbutton.png"
+import { useScreen } from "react-native";
 
 function App() {
   const { size } = useWindowSize({ gameWidth: 1920, gameHeight: 3405 });
   const { ratio } = size;
+  const screen = useScreen();
 
+  screen.requestOrientation("landscape");
   return (
     <div class="container">
       <div className="background " style={{ backgroundImage: `url(${backgroundImage})`, height: 3405 * ratio, width: 1920 * ratio, }} ></div>
