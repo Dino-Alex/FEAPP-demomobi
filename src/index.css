@@ -14,12 +14,5 @@ body {
   /* Áp dụng kiểu CSS cho giao diện điện thoại di động */
   body {
     transform: rotate(90deg);
-    transform-origin: left top;
-    width: 100vh;
-    height: 100vw;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
   }
 }
